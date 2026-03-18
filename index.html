@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    </head>
+
+    <body>
+        <p style="text-align: center;">Weekly study schedule</p>
+        <table border="2">
+            <tr>
+                <th>Time</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+            </tr>
+            <tr>
+                <th rowspan="2">8:00-10:00</th>
+                <td>Math</td>
+                <td>Physics</td>
+                <td>Programming</td>
+                <td rowspan="2">Database</td>
+            </tr>
+            <tr>
+                <td>English</td>            
+                <td>Chemistry</td>
+                <td><a href="https://www.electronics.com">Electronics</a></td>
+            </tr>
+            <tr>
+                <th>10:00-12:00</th>
+                <td>Project work</td>
+                <td>Project work</td>
+                <td>Networks</td>
+                
+                <td><img src="./camel.jpg" alt="Sample Image"></td>
+            </tr>
+        </table><br><br>
+        <hr>
+
+        <h2>Student Registration Form</h2>
+
+    <form action="submit_registration.php" method="post">
+        <label for="full_name">Full Name:</label><br>
+        <input type="text" id="full_name" name="full_name" required><br><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <p>Gender:</p>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label>
+        
+        <p>Country:</p>
+        <select name="country" required>
+            <option value="Lebanon">Lebanon</option>
+            <option value="uk">United Kingdom</option>
+            <option value="canada">Canada</option>
+        </select><br><br>
+
+        <p>Message:</p>
+        <textarea name="message" rows="4" cols="50" placeholder="Enter a message" required></textarea><br><br>
+        <input type="submit" value="Register">
+    </form>
+    </body>
+</html>
